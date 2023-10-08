@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Ticketo.TicketManagement.Application.Contracts.Persistence;
 using Ticketo.TicketManagement.Domain.Entities;
 
-namespace Ticketo.TicketManagement.Application.Features.Events
+namespace Ticketo.TicketManagement.Application.Features.Events.Queries.GetEventDetail
 {
     public class GetEventDetailQueryHandle : IRequestHandler<GetEventDetailQuery, EventDetailVm>
     {
