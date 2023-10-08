@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ticketo.TicketManagement.Domain.Entities
+namespace Ticketo.TicketManagement.Application.Contracts.Persistence
 {
-    public class Categories
+    public interface IOrderRepository
     {
     }
 }

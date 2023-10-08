@@ -7,16 +7,10 @@ using Ticketo.TicketManagement.Domain.Common;
 
 namespace Ticketo.TicketManagement.Domain.Entities
 {
-    public class Order : AuditableEntity
+    public class Category : AuditableEntity
     {
         public int Id { get; set; }
-
-        public int UserId { get; set; }
-
-        public int OrderTotal { get; set; }
-
-        public DateTime OrderPlaced { get; set; }
-
-        public bool OrderPaid { get; set; }
+        public string Name { get; set; } = String.Empty;
+        public ICollection<Event>? Events { get; set; }
     }
 }
