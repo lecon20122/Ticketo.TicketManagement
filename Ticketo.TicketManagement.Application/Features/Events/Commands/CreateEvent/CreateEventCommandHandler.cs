@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ticketo.TicketManagement.Application.Contracts.Persistence;
+using Ticketo.TicketManagement.Application.Exceptions;
 using Ticketo.TicketManagement.Domain.Entities;
 
 namespace Ticketo.TicketManagement.Application.Features.Events.Commands.CreateEvent
@@ -25,8 +26,11 @@ namespace Ticketo.TicketManagement.Application.Features.Events.Commands.CreateEv
         {
             var @event = _mapper.Map<Event>(request);
 
-            @event = await _eventRepository.AddAsync(@event);
+            var validator = new CreateEventCommandValidator();
+            var validationResult = await validator.ValidateAsync(request);
+            if (validationResult.Errors.Count > 0) throw new ValidationException(validationResult);
 
+            @event = await _eventRepository.AddAsync(@event);
             return @event.Id;
         }
     }
