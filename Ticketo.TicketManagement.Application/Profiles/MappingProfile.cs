@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Ticketo.TicketManagement.Application.Features.Categories.Commands.CreateCategory;
 using Ticketo.TicketManagement.Application.Features.Categories.Queries.GetCategoriesList;
 using Ticketo.TicketManagement.Application.Features.Categories.Queries.GetCategoriesListWithEvents;
 using Ticketo.TicketManagement.Application.Features.Events.Commands.CreateEvent;
@@ -17,12 +18,15 @@ namespace Ticketo.TicketManagement.Application.Profiles
             CreateMap<Category, CategoryDto>();
             CreateMap<Category, CategoryListVm>();
             CreateMap<Category, CategoryListEventVm>();
+            CreateMap<Category, CreateCategoryDto>().ReverseMap();
 
             CreateMap<Event, EventListVm>().ReverseMap();
             CreateMap<Event, EventDetailVm>().ReverseMap();
             CreateMap<Event, CreateEventCommand>().ReverseMap();
             CreateMap<Event, UpdateEventCommand>().ReverseMap();
             CreateMap<Event, DeleteEventCommand>().ReverseMap();
+
+
 
         }
     }

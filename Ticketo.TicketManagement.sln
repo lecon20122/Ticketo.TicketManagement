@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketo.TicketManagement.Domain", "Ticketo.TicketManagement.Domain\Ticketo.TicketManagement.Domain.csproj", "{8A440F95-CD43-4C30-BD18-EB67E01AE365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketo.TicketManagement.Application", "Ticketo.TicketManagement.Application\Ticketo.TicketManagement.Application.csproj", "{6BAB10A2-8D03-4C91-9ACE-EFC327A4D5EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketo.TicketManagement.Application", "Ticketo.TicketManagement.Application\Ticketo.TicketManagement.Application.csproj", "{6BAB10A2-8D03-4C91-9ACE-EFC327A4D5EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketo.TicketManagement.Persistence", "Ticketo.TicketManagement.Persistence\Ticketo.TicketManagement.Persistence.csproj", "{D6C7734C-AAE9-4302-9724-3BA801EC318B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{6BAB10A2-8D03-4C91-9ACE-EFC327A4D5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BAB10A2-8D03-4C91-9ACE-EFC327A4D5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BAB10A2-8D03-4C91-9ACE-EFC327A4D5EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C7734C-AAE9-4302-9724-3BA801EC318B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C7734C-AAE9-4302-9724-3BA801EC318B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C7734C-AAE9-4302-9724-3BA801EC318B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C7734C-AAE9-4302-9724-3BA801EC318B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{88F3E69B-7BCF-4F29-84A3-E3D34383DFB3} = {BF1ADA74-5676-4BBA-BB4A-D0FECC87D3D0}
 		{8A440F95-CD43-4C30-BD18-EB67E01AE365} = {38B7C59E-9EB6-489B-8BB2-69876AD0E3DF}
 		{6BAB10A2-8D03-4C91-9ACE-EFC327A4D5EC} = {38B7C59E-9EB6-489B-8BB2-69876AD0E3DF}
+		{D6C7734C-AAE9-4302-9724-3BA801EC318B} = {88F3E69B-7BCF-4F29-84A3-E3D34383DFB3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E3BDECE-F175-4051-9A63-C4F71FC31793}
