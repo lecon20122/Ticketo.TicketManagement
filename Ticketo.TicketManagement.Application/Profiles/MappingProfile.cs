@@ -3,7 +3,6 @@ using Ticketo.TicketManagement.Application.Features.Categories.Commands.CreateCa
 using Ticketo.TicketManagement.Application.Features.Categories.Queries.GetCategoriesList;
 using Ticketo.TicketManagement.Application.Features.Categories.Queries.GetCategoriesListWithEvents;
 using Ticketo.TicketManagement.Application.Features.Events.Commands.CreateEvent;
-using Ticketo.TicketManagement.Application.Features.Events.Commands.DeleteEvent;
 using Ticketo.TicketManagement.Application.Features.Events.Commands.UpdateEvent;
 using Ticketo.TicketManagement.Application.Features.Events.Queries.GetEventDetail;
 using Ticketo.TicketManagement.Application.Features.Events.Queries.GetEventsList;
@@ -15,19 +14,17 @@ namespace Ticketo.TicketManagement.Application.Profiles
     {
         public MappingProfile()
         {
+            CreateMap<Event, EventListVm>().ReverseMap();
+            CreateMap<Event, CreateEventCommand>().ReverseMap();
+            CreateMap<Event, UpdateEventCommand>().ReverseMap();
+            CreateMap<Event, EventDetailVm>().ReverseMap();
+            CreateMap<Event, CategoryEventDto>().ReverseMap();
+
             CreateMap<Category, CategoryDto>();
             CreateMap<Category, CategoryListVm>();
             CreateMap<Category, CategoryListEventVm>();
-            CreateMap<Category, CreateCategoryDto>().ReverseMap();
-
-            CreateMap<Event, EventListVm>().ReverseMap();
-            CreateMap<Event, EventDetailVm>().ReverseMap();
-            CreateMap<Event, CreateEventCommand>().ReverseMap();
-            CreateMap<Event, UpdateEventCommand>().ReverseMap();
-            CreateMap<Event, DeleteEventCommand>().ReverseMap();
-
-
-
+            CreateMap<Category, CreateCategoryCommand>();
+            CreateMap<Category, CreateCategoryDto>();
         }
     }
 }

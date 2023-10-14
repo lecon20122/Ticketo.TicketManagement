@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketo.TicketManagement.Pe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketo.TicketManagement.Infrastructure", "Ticketo.TicketManagement.Infrastructure\Ticketo.TicketManagement.Infrastructure.csproj", "{E4D38BB4-1215-4390-8D12-0ABFC6CFD7AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketo.TicketManagement.API", "Ticketo.TicketManagement.API\Ticketo.TicketManagement.API.csproj", "{D856EABA-482F-4CC6-91F3-86464413AE62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketo.TicketManagement.API", "Ticketo.TicketManagement.API\Ticketo.TicketManagement.API.csproj", "{D856EABA-482F-4CC6-91F3-86464413AE62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketo.TicketManagement.Test", "Ticketo.TicketManagement.Test\Ticketo.TicketManagement.Test.csproj", "{295639EF-DF19-47C0-A70C-6D3BDB5369E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{D856EABA-482F-4CC6-91F3-86464413AE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D856EABA-482F-4CC6-91F3-86464413AE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D856EABA-482F-4CC6-91F3-86464413AE62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295639EF-DF19-47C0-A70C-6D3BDB5369E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295639EF-DF19-47C0-A70C-6D3BDB5369E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295639EF-DF19-47C0-A70C-6D3BDB5369E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295639EF-DF19-47C0-A70C-6D3BDB5369E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{D6C7734C-AAE9-4302-9724-3BA801EC318B} = {88F3E69B-7BCF-4F29-84A3-E3D34383DFB3}
 		{E4D38BB4-1215-4390-8D12-0ABFC6CFD7AC} = {88F3E69B-7BCF-4F29-84A3-E3D34383DFB3}
 		{D856EABA-482F-4CC6-91F3-86464413AE62} = {255F2E12-26AE-4885-87D4-36A0683C5026}
+		{295639EF-DF19-47C0-A70C-6D3BDB5369E6} = {570D333C-6759-436E-9B0B-7A2413C10248}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E3BDECE-F175-4051-9A63-C4F71FC31793}

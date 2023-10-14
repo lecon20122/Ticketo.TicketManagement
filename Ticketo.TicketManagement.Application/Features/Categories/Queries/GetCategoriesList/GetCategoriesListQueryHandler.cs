@@ -1,10 +1,5 @@
 ﻿using AutoMapper;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Ticketo.TicketManagement.Application.Contracts.Persistence;
 
 namespace Ticketo.TicketManagement.Application.Features.Categories.Queries.GetCategoriesList
@@ -23,7 +18,9 @@ namespace Ticketo.TicketManagement.Application.Features.Categories.Queries.GetCa
         {
             var categories = (await _categoryRepository.ListAllAsync()).OrderBy(x => x.Name);
 
-           return _mapper.Map<List<CategoryListVm>>(categories);
+            var result = _mapper.Map<List<CategoryListVm>>(categories);
+
+            return result;
         }
     }
 }
