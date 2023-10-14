@@ -8,5 +8,9 @@ namespace Ticketo.TicketManagement.Application.Features.Events.Queries.GetEvents
 {
     public class EventListVm
     {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public DateTime Date { get; set; }
+        public string? ImageUrl { get; set; }
     }
 }

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Ticketo.TicketManagement.Application.Contracts.Infrastructure;
 using Ticketo.TicketManagement.Application.Models.Mail;
+using Ticketo.TicketManagement.Infrastructure.FileExport;
 using Ticketo.TicketManagement.Infrastructure.Mail;
 
 namespace Ticketo.TicketManagement.Infrastructure
@@ -17,6 +18,7 @@ namespace Ticketo.TicketManagement.Infrastructure
         {
             services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
             services.AddTransient<IEmailService, EmailService>();
+            services.AddTransient<ICsvExporter, CsvExporter>();
 
             return services;
         }

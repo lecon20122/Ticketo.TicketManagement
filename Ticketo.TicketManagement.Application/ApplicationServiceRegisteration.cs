@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System.Net.NetworkInformation;
 using System.Reflection;
 
 namespace Ticketo.TicketManagement.Application
@@ -10,7 +9,7 @@ namespace Ticketo.TicketManagement.Application
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Ping).Assembly));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
             return services;
         }
