@@ -27,8 +27,4 @@
     <ProjectReference Include="..\Ticketo.TicketManagement.Application\Ticketo.TicketManagement.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Categories\Commands\" />
-  </ItemGroup>
-
 </Project>

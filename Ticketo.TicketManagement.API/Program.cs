@@ -1,3 +1,4 @@
+using Ticketo.TicketManagement.API.Middleware;
 using Ticketo.TicketManagement.Application;
 using Ticketo.TicketManagement.Infrastructure;
 using Ticketo.TicketManagement.Persistence;
@@ -28,6 +29,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCustomExceptionHandler();
 
 app.MapControllers();
 
